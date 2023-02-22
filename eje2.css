@@ -1,0 +1,49 @@
+ body{
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+ }
+ nav{
+    background-color: rgb(23, 22, 22);
+    color: white;
+    width: 100%;
+ }
+ nav .movil{
+    display: none ;
+ }
+ nav .logo{
+    min-width: 250px;
+ }
+ nav a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: 20px 25px;
+ }
+ nav  a:hover{
+    background-color: aqua;
+    color: black;
+ }
+ nav .computador{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pad: 0 20px;
+ }
+  nav .computador .primero,
+  nav .computador .segundo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ nav .computador .segundo.pequeño .sub-menu{
+   display: none;
+ }
+ nav .computador .segundo.pequeño:hover .sub-menu{
+   display: block;
+   padding-top: 250px;
+   position: absolute;
+   background-color: black;
+ }
+ 
+

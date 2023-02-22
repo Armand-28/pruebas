@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(128, 127, 127);
+    width: 100%;
+    height: 100vh;
+} 
+div{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 460px;
+    color: #0dece9;
+}
+aside{
+    position: absolute;
+    width: 500px;
+    height: 600px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+}
+aside{
+    background-size: 100% 100%;
+    background-position: center;
+    background-image: url(img.jpg);
+    background-repeat:no no-repeat;
+    overflow: hidden;
+}
+.form{
+    width: 100%;
+    height: 50px;
+    max-width: 450px;
+    position: relative; 
+    margin-top: -150px;
+    
+}
+.form input{
+    width: 100%;
+    height: 100%;
+    background: none;
+    color: white;
+    padding-top: 20px;
+    border: none;
+    outline: 0px;
+}
+.form .papa-nombre{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 0.5px solid rgb(157, 157, 230);
+}
+.form .papa-nombre:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom: 4px solid #0dece9;
+    transform: translateX(150%);
+    transition: all 0.3s ease;
+}
+.nombre{
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    transition: all 0.3s ease;
+    color: white;
+}
+.form input:focus + .papa-nombre .nombre,
+.form input:valid + .papa-nombre .nombre{
+    transform: translateY(-150%);
+    font-size: 15px;
+    color: #0dece9;
+}
+.form input:focus + .papa-nombre:after,
+.form input:valid + .papa-nombre:after{
+    transform: translateY(0);
+}
+.form-con{
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    position: relative;
+}
+.form-con .input-2{
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    color: chartreuse;
+    outline: 0px;
+    padding-top: 20px;
+}
+.form-con .papa-contraseña{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 0.5px solid rgb(157, 157, 230);
+}
+.form-con .papa-contraseña:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    border-bottom:  4px solid #0dece9 ;
+    transform: translateX(150%);
+    transition: all 0.3s ease;
+}
+.contraseña{
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    transition: all 0.3s ease;
+    color: white;
+}
+.form-con .input-2:focus + .papa-contraseña .contraseña,
+.form-con .input-2:valid+ .papa-contraseña .contraseña{
+    transform: translateY(-150%);
+    color: #0dece9;
+    font-size: 15px;
+}
+.form-con .input-2:focus + .papa-contraseña:after,
+.form-con .input-2:valid + .papa-contraseña:after{
+    transform: translateY(0);
+}
+button{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 250px;
+    width: 200px;
+    height: 40px;
+    background-color: white;
+    border-radius: 10px;
+    border: none;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+button a{
+    text-decoration: none;
+    color: black;
+    justify-content: center;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #0dece9;
+    transform: scale(1.1);
+}
+
